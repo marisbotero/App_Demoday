@@ -1,0 +1,90 @@
+<div class="contenedorSimulador">
+<br>
+<br>
+<br>
+<p id="notice"><%= notice %></p>
+<div class="row">
+<!-- Informacion general del curso-->
+
+<div class="col-md-3">
+<div class="row">
+<div class="col-md-12 col-md-offset-1">
+  <%= image_tag "hola.png", class: "imagen", alt: "Bienvenidos" %>
+</div>
+<div class="col-md-offset-1 informacion">
+  <h1><%= @course.name %></h1>
+  <h2><%= @unit.name%></h2>
+  <p><%= @unit.description %></p>
+</div>
+<!-- Seccion interactiva-->
+</div>
+</div>
+<div class="col-md-9">
+
+<!-- Guias y Contenido -->
+
+<div class="row">
+<div class="col-md-4">
+<p class="resaltado">Guia contenido</p>
+<div class="guia">
+<section id="paso1" class="efecto">
+<h2>Paso 1</h2>
+<p><%= @unit.content %><p>
+<a href="#paso2" class="btn btn-success navbar-btn btn-juli posicion">siguiente</a>
+</section>
+
+<section id="paso2" class="efecto">
+<h2>Paso 2</h2>
+<p><%= @unit.content2 %><p>
+<a href="#paso1" class="btn btn-success navbar-btn btn-juli posicion">anterior</a>
+<a href="#paso3" class="btn btn-success navbar-btn btn-juli posicion">siguiente</a>
+</section>
+
+<section id="paso3" class="efecto">
+<h2>Paso 3</h2>
+<p><%= @unit.content3 %><p>
+<a href="#paso2" class="btn btn-success navbar-btn btn-juli posicion">anterior</a>
+</section>
+</div>
+
+<!-- Simulador -->
+</div>
+<div class="col-md-4">
+<p class="resaltado">Simulador</p>
+<textarea id="simulador" class="simular"></textarea>
+<button data-course="<%= @course.id %>" data-unit="<%= @unit.id %>" id="comparar-btn" class="btn btn-success navbar-btn btn-juli">Comparar</button>
+
+<%= link_to 'Atras', course_path(@course) %> 
+</div>
+
+<!-- Respuesta -->
+
+<div class="col-md-4">
+<section class="imagen">
+	<div id="respuesta_box">
+<%=image_tag 'ajax-loader.gif', style: "display: none;" %>
+<span id="respuesta"></span>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+</div>
+  
+
+
+</div>  
+
+  
+
+
+
+
+
+
+
+
+
+
+

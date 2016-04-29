@@ -1,0 +1,968 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contenedorGlobal{
+   width: 100%;
+   max-width: 1920px;
+   margin: 0 auto;
+   overflow: hidden;
+   font-family: 'Montserrat';
+}
+
+.contenedor{
+  width: 100%;
+  height: 924px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+  /*barra navegador*/
+.logo{
+    overflow: hidden;
+    float: left;
+}
+
+.imgLogo{
+  height: 100px;
+}
+
+/* Clearfix */
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+    clear: both;
+}
+ 
+.clear {
+    *zoom: 1;
+}
+
+
+
+/* fin clearfix*/
+
+nav{
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+ }
+.navegador{
+  width: 70%;
+}
+.menu{
+  float: left;
+  margin-left: 48%;
+ 
+}
+.menu ul {
+ list-style: none;
+ margin: 0;
+}
+.menu ul li{
+  
+  float: right;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+
+
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color:white;
+ padding-bottom: 10px;
+
+}
+
+/* efecto hover */
+ .menu ul li a:hover {
+    color: #00A1A5;
+   
+
+}
+
+/* efecto Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #00A1A5;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/*slider header**/
+.textos{
+position: relative;
+left: 52%;
+width: 80%;
+bottom: 500px;
+font-size: 5em;
+color: #FF5722;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+.textos2{
+position: relative;
+right: 40%;
+width: 70%;
+bottom: 560px;
+font-size: 5em;
+color: white;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+.textos3{
+position: relative;
+left: 62%;
+width: 70%;
+bottom: 500px;
+font-size: 5em;
+color: #00BCD4;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+/*segunda seccion*/
+.filosofia {
+  float: left;
+  width: 30%;
+  margin-left: 35%;
+  text-align: center;
+
+}
+.filosofia h2{
+padding: 0.5em 0 0.55em 0; 
+border-bottom: 1px solid #eee;
+
+
+}
+/* animacion*/
+
+/*cuadros filosofia*/
+.cuadro{
+  float: left;
+  margin-left: 27%;
+
+}
+.cuadro a{
+  
+  width: 250px;
+  float: left;
+  overflow: hidden;
+  padding: 1.5em;
+  margin: 2.5em;
+  text-align: center;
+  text-decoration: none !important;
+  color: #EF810D;
+  outline: none !important;
+}
+
+.cuadro a:focus{
+  color: #EF810D;
+}
+
+.cuadro h3{
+    border-bottom: 1px solid #eee;
+    padding: 1.5em 0 0.55em 0;
+    margin: 0 0 0.75em 0;
+    box-sizing: border-box;
+    
+  }
+.cuadro  p {
+    margin: 0;  
+    font-size: 1.5rem;
+  }
+.icon {
+    background:#EF810D ;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+
+.cuadro a:hover{
+  background: #EF810D;
+    color: white;
+    text-decoration: none;  
+    }
+
+.cuadro a:active {
+  color: white !important;
+  text-decoration: none;
+        
+  }
+
+
+/*tercera seccion*/
+.seccion3{
+  clear: both;
+  width: 100%;
+  height:25%;
+   
+}
+.somos{
+clear: both;
+  float: left;
+  width: 50%;
+  background:#EF810D ;
+  box-sizing: border-box;
+  text-align: center;
+  }
+.somos p{
+
+  width: 45%;
+  height: 200px;
+  padding: 2%;
+  margin-left: 28%;
+  color: white;
+  font-size: 1.5rem; 
+}
+.somos h2{
+  padding: 2%;
+  color: white;
+  font-size: 5rem; 
+}
+/*animacion*/
+.imagenes{
+  padding: 2%;
+  width:50%;
+  height: 332px;  
+  box-sizing: border-box; 
+}
+
+
+.vision{
+  float: right;
+  width: 50%;
+  background:#00A1A5;
+  box-sizing: border-box;
+  text-align: center;
+  }
+.vision p{
+
+  width: 45%;
+  height: 200px;
+  padding: 2%;
+  margin-left: 27%;
+  color: white;
+  font-size: 1.5rem; 
+}
+.vision h2{
+  padding: 2%;
+  color: white;
+  font-size: 5rem; 
+}
+
+/*boton*/
+.button {
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  color: white;
+  background:#00A1A5;
+  display: inline-block;
+  width: 230px;
+  height: 60px;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+/*efecto boton*/
+/* Box Shadow Inset */
+.hvr-box-shadow-inset {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hvr-box-shadow-inset:hover, .hvr-box-shadow-inset:focus, .hvr-box-shadow-inset:active {
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+
+/*cursos*/
+.cursos h1{
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+  margin-left: 10%;
+}
+#ex4 {
+line-height: 0px;
+color: transparent;
+font-size: 30px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 200;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+#ex4:hover {
+line-height: 70px;
+color: #575858;
+}
+#ex4 img{ float: left;
+  width: 50%;
+margin: 0 15px;
+}
+#ex5 {
+  clear: both;
+line-height: 0px;
+color: transparent;
+font-size: 30px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 200;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+#ex5:hover {
+line-height: 70px;
+color: #575858;
+}
+#ex5 img{ float: left;
+  width: 50%;
+margin: 0 15px;
+}
+
+/* Diseño Responsive*/
+@media screen and ( max-width: 1680px ){
+
+.contenedor{
+height:832px;
+}
+
+.textos{
+
+width: 77%;
+bottom: 440px;
+font-size: 4.5em;
+
+}
+
+.textos2{
+width: 67%;
+bottom: 500px;
+font-size: 4.5em;
+}
+.textos3{
+  width: 77%;
+bottom: 440px;
+font-size: 4.5em;
+}
+
+.cuadro{
+  margin-left: 24%;
+}
+
+.imagenes{
+  height: 328px;  
+  
+}
+}
+
+@media screen and ( max-width: 1440px ){
+
+.contenedor{
+height:714px;
+}
+
+.textos{
+
+bottom: 365px;
+font-size: 3.8em;
+
+}
+
+.textos2{
+bottom: 400px;
+font-size: 3.8em;
+}
+.textos3{
+bottom: 365px;
+font-size: 3.8em;
+}
+
+.cuadro{
+  margin-left: 16%;
+}
+
+.filosofia {
+ margin-left: 33%;
+}
+
+.imagenes{
+  height: 310px;  
+  
+}
+}
+
+@media screen and ( max-width: 1366px ){
+
+.contenedor{
+height:677px;
+}
+
+.textos{
+bottom: 350px;
+font-size: 3.6em;
+
+}
+
+.textos2{
+bottom: 350px;
+font-size: 3.6em;
+}
+
+.textos3{
+bottom: 350px;
+font-size: 3.6em;
+}
+
+}
+
+@media screen and ( max-width: 1280px ){
+
+.contenedor{
+height:635px;
+}
+
+.textos{
+bottom: 320px;
+font-size: 3.4em;
+
+}
+
+.textos2{
+bottom: 320px;
+font-size: 3.4em;
+}
+
+.textos3{
+bottom: 320px;
+font-size: 3.4em;
+}
+
+}
+
+@media screen and ( max-width: 1024px ){
+
+.contenedor{
+height:503px;
+}
+
+.imgLogo{
+  height: 90px;
+}
+
+
+nav{
+  height: 90px;
+ }
+
+.cuadro{
+  margin-left: 6%;
+}
+
+
+.textos{
+bottom: 200px;
+font-size: 2.8em;
+
+}
+
+.textos2{
+bottom: 220px;
+font-size: 2.8em;
+}
+.textos3{
+bottom: 200px;
+font-size: 2.8em;
+}
+
+.somos p{
+  height: 150px;
+}
+
+.vision p{
+  height: 150px;
+}
+
+.imagenes{
+  height: 250px;  
+  
+}
+
+.contactanos p{
+  margin-left: 10%;
+  font-size: 1.3em; 
+  width: 350px;  
+}
+
+.contactanos h2{
+  margin-top: 100px;  
+}
+.filosofia h2{
+font-size: 28px;
+}
+}
+
+@media screen and ( max-width: 800px ){
+
+.contenedor{
+height:393px;
+}
+
+.imgLogo{
+  height: 90px;
+}
+
+.cuadro{
+  margin-left: 1%;
+}
+.cuadro a{
+  
+  width: 180px;
+  padding: 1.3em;
+}
+
+.textos{
+bottom: 130px;
+font-size: 2.1em;
+
+}
+
+.textos2{
+bottom: 170px;
+font-size: 2.1em;
+}
+.textos3{
+bottom: 130px;
+font-size: 2.1em;
+}
+
+.somos p{
+
+  width: 70%;
+  height: 110px;
+  margin-left: 12%;
+}
+
+.vision p{
+  width: 90%;
+  height: 110px;
+  margin-left: 6%;
+}
+
+.imagenes{
+  height: 170px;
+  padding: 0px;  
+  
+}
+
+.contactanos h2{
+  margin-top: 50px;  
+}
+
+.contactanos{
+  
+  height: 280px;
+
+}
+.filosofia h2{
+font-size: 23px;
+}
+}
+@media screen and ( max-width: 600px ){
+/*menu responsive*/
+.contenedor{
+  height: 295px;
+}
+
+nav {
+border-bottom: 0;
+height: auto;
+height: 100px;
+}
+ 
+nav ul {
+display: none;
+height: auto;
+width: 100%;
+    }
+nav ul li{
+padding-bottom: 5px;
+padding-top: 5px;
+
+}
+nav li {
+width: 30%;
+float: left;
+position: relative;
+display: inline;
+}
+ 
+nav a {
+text-align: left;
+}
+nav a#pull{
+display: block;
+font-size: 2.9em;
+margin-left: 90%;
+color: #00A1A5;
+}
+
+nav a#pull:after {
+content:"";
+width: 20px;
+height: 20px;
+display: inline-block;
+position: absolute;
+top: 5px;
+text-align: right;
+    }
+.menu ul li{
+  padding-top: 10px;
+ text-align: right;
+
+}
+/*contenido */
+
+.contenedor{
+height:301px;
+}
+.imgLogo{
+  height: 90px;
+}
+
+
+.cuadro{
+  margin-left: 15px;
+}
+.cuadro a{
+  
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 0px;
+  padding: 1em;
+}
+
+.textos{
+bottom: 40px;
+font-size: 1.8em;
+left: 16%;
+width: 70%;
+
+}
+
+.textos2{
+bottom: 20px;
+font-size: 1.8em;
+right: 16%;
+width: 70%;
+}
+
+.textos3{
+bottom: 40px;
+font-size: 1.8em;
+right: 20%;
+width: 70%;
+}
+
+.somos {
+
+  width: 100%;
+}
+.vision {
+  clear: both;
+    position: relative;
+    bottom: 170px;
+    width: 100%;
+}
+
+.imagenes{
+  height: 200px;
+  padding: 0px; 
+  margin-left: 0px; 
+  width: 100%;
+  
+}
+.imgVision{
+  clear: both;
+  position: relative;
+  top: 270px;
+}
+
+
+.filosofia{
+  margin-left: 24%;
+}
+.filosofia h2{
+font-size: 30px;
+}
+.filosofia h2{
+font-size: 20px;
+width: 280px;
+}
+.contactanos{
+  margin-top: 40px;
+  height: 280px;
+
+}
+
+.contactanos p{
+  width: 250px;
+
+}
+.contactanos h2{
+  margin-top: 50px;  
+}
+
+.formulario {
+ left:45%;  
+  bottom: 50%;
+}
+}
+
+@media screen and ( max-width: 480px ){
+/*menu responsive*/
+ .contenedor{
+  height: 400px;
+  background-size: contain !important;
+ background: url("fondopeq.jpg") no-repeat;
+
+}
+div#fondo{
+  display: none;
+}
+
+nav a#pull{
+margin-left: 90%;
+}
+.menu ul li a {
+  color: white;
+}
+/*contenido */
+
+.imgLogo{
+  height: 90px;
+}
+
+
+.cuadro{
+  margin-left: 80px;
+}
+.cuadro a{
+  
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 2.1em;
+  width: 300px;
+  font-size: 18px
+}
+
+
+
+.somos {
+
+  width: 100%;
+}
+.vision {
+  clear: both;
+    position: relative;
+    bottom: 170px;
+    width: 100%;
+}
+
+.imagenes{
+  height: 200px;
+  padding: 0px; 
+  margin-left: 0px; 
+  width: 100%;
+  
+}
+.imgVision{
+  clear: both;
+  position: relative;
+  top: 270px;
+}
+
+
+.filosofia{
+  margin-left: 20%;
+
+}
+.filosofia h2{
+font-size: 20px;
+width: 280px;
+}
+.contactanos{
+  margin-top: 40px;
+  height: 280px;
+
+}
+
+.contactanos p{
+  width: 230px;
+  font-size: 1.2em;
+
+}
+.contactanos h2{
+  margin-top: 50px;  
+}
+
+.formulario {
+    left: 50%;
+    bottom: 30%;
+}
+}
+
+
+@media screen and ( max-width: 360px ){
+
+.contenedor{
+height:300px; 
+}
+ .imgLogo{
+  height: 90px;
+}
+
+nav li {
+width: 50%;
+}
+nav{
+  background:rgba(255,255,255, 0.18);
+  height: 90px;
+ }
+
+.textos{
+display: none;
+}
+
+.textos2{
+display: none;
+}
+
+
+
+/*segunda seccion*/
+.filosofia {
+  margin-left: 7%;
+ }
+
+/*cuadros filosofia*/
+.cuadro{
+
+  margin-left: 28px;
+}
+
+
+/*tercera seccion*/
+.somos p{
+
+  width: 80%;
+  height: 180px;
+  margin-left: 8%;
+  font-size: 1.5rem; 
+}
+.somos h2{
+  font-size: 3rem; 
+}
+.imagenes{
+  height: 185px;
+  padding-bottom: 15px; 
+  padding-top: 5px;
+}
+.vision p{
+  width: 80%;
+  height: 180px;
+  margin-left: 8%;
+  font-size: 1.5rem; 
+}
+.vision h2{
+  font-size: 3rem; 
+}
+
+.imgVision{
+  top: 290px;
+}
+/*formulario*/
+.contactanos{
+  margin-top: 20px;
+  height: 380px;
+
+}
+
+.contactanos p{
+  margin-left: 20%;
+  margin-top: 20px;
+
+}
+.contactanos h2{
+ margin-left: 20%; 
+}
+
+.formulario {
+    left: 1%;
+    bottom: 3%;
+}
+
+}
+@media screen and ( max-width: 320px ){
+
+.cuadro{
+  margin-left: 5px;
+}
+.filosofia {
+  margin-left: 7%;
+ }
+
+}  

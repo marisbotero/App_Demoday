@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_unit.user_id %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @user_unit.unit_id %>
+</p>
+
+<p>
+  <strong>Complete:</strong>
+  <%= @user_unit.complete %>
+</p>
+
+<p>
+  <strong>Coment:</strong>
+  <%= @user_unit.coment %>
+</p>
+
+<p>
+  <strong>Losingunit:</strong>
+  <%= @user_unit.losingunit %>
+</p>
+
+<%= link_to 'Edit', edit_user_unit_path(@user_unit) %> |
+<%= link_to 'Back', user_units_path %>

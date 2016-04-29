@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Units</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Unit</th>
+      <th>Complete</th>
+      <th>Coment</th>
+      <th>Losingunit</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_units.each do |user_unit| %>
+      <tr>
+        <td><%= user_unit.user_id %></td>
+        <td><%= user_unit.unit_id %></td>
+        <td><%= user_unit.complete %></td>
+        <td><%= user_unit.coment %></td>
+        <td><%= user_unit.losingunit %></td>
+        <td><%= link_to 'Show', user_unit %></td>
+        <td><%= link_to 'Edit', edit_user_unit_path(user_unit) %></td>
+        <td><%= link_to 'Destroy', user_unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User unit', new_user_unit_path %>

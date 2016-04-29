@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Nombre:</strong>
+  <%= @course.name %>
+</p>
+
+<p>
+  <strong>Intensidad:</strong>
+  <%= @course.intensity %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @course.description %>
+</p>
+
+<h2>Unidades del curso </h2>
+
+
+<table>
+  <thead>
+    <tr>
+      
+      <th>Nombre</th>
+      <th>Descripcion de la unidad</th>
+     
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  
+    <% @course.units.each do |unit| %>
+      <tr>
+        
+        <td><%= unit.name %></td>        
+        <td><%= unit.description %></td>
+        
+      
+      <td><%= link_to  "Empezar", course_unit_path(@course,unit) %></td>
+
+
+      
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @user_course.course_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_course.user_id %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @user_course.points %>
+</p>
+
+<p>
+  <strong>Percentage:</strong>
+  <%= @user_course.percentage %>
+</p>
+
+<%= link_to 'Edit', edit_user_course_path(@user_course) %> |
+<%= link_to 'Back', user_courses_path %>

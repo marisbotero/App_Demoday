@@ -1,0 +1,155 @@
+<!--Contenedor Global -->
+<div class="contenedorGlobal">
+
+<!-- Encabezado -->
+
+  <div class="contenedor">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <nav class="navegador">
+  <!-- contenedor del menu -->
+  <div>
+   <!-- Lista de menu -->
+  <div class="menu">
+  <ul>
+  <li><a href="#" class="scroll hvr-underline-from-center">Equipo</a></li>
+  <li><a href="#" class="scroll hvr-underline-from-center">Cursos</a></li>
+  <li><a href="#vision" class="scroll hvr-underline-from-center">Visión</a></li>        
+  <li><a href="#palabras" class="scroll hvr-underline-from-center">Nuestra filosofía</a></li>       
+  </ul>
+  </div>
+  </div>
+</nav>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div id="fondo"class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag "fondo2.jpg", alt: "fondo" %>
+      <div class="carousel-caption">
+        <h1 class="textos2"> Paso a paso se aprende mejor! </h1>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag "fondo1.jpg", alt: "fondo" %>
+      <div class="carousel-caption">
+        <h1 class="textos"> Aprende arduino y Energias renovables </h1>
+        </div>
+    </div>
+    <div class="item">
+      <%= image_tag "fondo.jpg", alt: "textos" %>
+      <div class="carousel-caption">
+        <h1 class="textos3">Ciencia y tecnológica a tu alcance</h1>
+      </div>
+    </div>
+  </div>
+</div>  
+</div>
+    
+<!-- Final navegador-->
+<!-- Seccion 1-->  
+
+<!-- seccion 2-->
+    <div id="palabras">
+    
+    <!-- iconos y cuadros-->
+        <section class="cuadro">
+        
+        <a href="#0" >
+          <span ><%= image_tag "educacion.png", class: "icon", alt: "IconoEducacion" %></span>
+          <h3>Educación</h3>
+          <p>Experiencias significativas que evocan y motivan un aprendizaje constructivo</p>
+        </a>
+
+        <a href="#0">
+          <span><%= image_tag "exclusivo.png", class: "icon", alt: "IconoExclusividad" %></span>
+          <h3>Exclusividad</h3>
+          <p>Asesorías personalizadas de acuerdo a las necesidades de cada usuario</p>
+        </a>
+
+        <a href="#0">
+          <span><%= image_tag "tiempo.png", class: "icon", alt: "IconoTiempo" %></span>
+          <h3>Flexibilidad</h3>
+          <p>Aprende en cualquier horario desde la comodidad de tu hogar y a tu propia ritmo</p>
+        </a>
+
+        </section>
+        <!--final iconos-->
+    <!-- información-->
+
+        <section class="filosofia" >
+
+        <h2>Actividades Claves</h2>
+        
+        </section>
+
+    </div>
+<!-- seccion 3-->
+
+    <div id="vision" class="seccion3">
+    <section class="somos">
+    <h2>Filosofía</h2>
+        <p>Creemos en un conocimiento universal y accesible para fomentar la creatividad y el mejoramiento continuo de los procesos formativos.
+        </p>
+        </section>
+        
+        <%= image_tag "filosofia.png", class: "imagenes", alt: "filosofiaEmpresarial" %>
+    </div>
+
+    <div class="seccion3">
+      <%= image_tag "vision.png", class: "imagenes imgVision", alt: "Vision" %>
+       <section class="vision">
+    <h2>Visión</h2>
+        <p>Nos proyectamos hacia una sociedad de conocimiento donde los jovenes generen nuevas tecnologias y construyan propuestas que pretendan solucionar las problematicas del entorno actual.
+        </p>
+        </section>
+
+
+    </div>
+<!-- final seccion3-->
+<!--Contactanos-->
+<div class="cursos">
+<h1>Cursos </h1>
+
+<div id="ex4" >
+<%= image_tag "cursos-01.png", alt: "Energías" %>
+<h2>Robotica al calcance de tu mano</h2>
+<p>Aprende a programar codigo
+</p>
+</div>
+
+<div id="ex5" >
+<%= image_tag "cursos-02.png", alt: "Energías" %>
+<h2>La mejor forma de pensar en el futuro</h2>
+<p>Aprende Sobre las energias renovables 
+</p>
+
+<div>
+<tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td><%= link_to course.name, course %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+  <%=link_to  "energias",energies_path%>
+  
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,105 @@
+// Place all the styles related to the units controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contenedorSimulador{
+width: 100%;
+max-width: 1920px;
+height: 900px;
+background-size: contain;
+background: url(asset-path("simulador.jpg")) no-repeat;
+}
+
+.guia{
+	
+	display: block;
+	width: 100%;
+	height: 350px;
+	overflow:hidden;
+	border:solid;
+	border-radius: 8px;
+	border-width: 4px;
+	border-color: #8BC34A;
+}
+.resaltado{
+	color: #EF810D;
+	font-weight: bold;
+	text-align: center;
+
+}
+.posicion{
+position: relative;
+top:60px;
+}
+#paso1{
+	color: #333333;
+	font-size: 14px;
+	height: 100%;
+	padding: 5%;
+}
+
+#paso2{
+	color: #333333;
+	font-size: 14px;
+	padding: 5%;
+	height: 100%;
+}
+
+#paso3{
+	color: #333333;
+	font-size: 14px;
+	padding: 5%;
+	height: 100%;
+}
+.efecto{
+ overflow:hidden;
+transition: all 0.5s ease;
+}
+
+.efecto:target{
+    height:100%;
+}
+
+.simular{
+	width: 100%;
+	height: 350px;
+	background: #333333;
+	border-radius: 8px;
+	color: #8BC34A;
+	padding: 5%;
+	font-size: 1.8em;
+
+}
+.imagen{
+	width: 90%;
+	padding: 4px;
+	display: block;
+
+}
+.informacion{
+	align-content: center;
+}
+.informacion h1{
+	padding-left: 2%;
+	font-size:2.8em;
+	font-weight: bold;
+	width: 85%;
+	color: #EF810D;
+	text-align: center; 
+}
+.informacion h2{
+	padding-left:2%;
+	font-size:2.5em;
+	font-weight: bold;
+	background:#EF810D;
+	color: white;
+	text-align: center;
+	width: 65%;
+	margin-left: 10%;
+	margin-top: 0px;
+}
+
+.informacion p{
+font-size:1em;
+text-align: center;
+}
